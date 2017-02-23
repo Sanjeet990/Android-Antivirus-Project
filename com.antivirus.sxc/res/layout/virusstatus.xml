@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff00aa00"
+    android:orientation="vertical"
+    android:padding="20.0dip" >
+
+    <TextView
+        android:id="@+id/num_virus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30.0dip"
+        android:text="0"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffffff"
+        android:textSize="80.0dip" />
+
+    <TextView
+        android:id="@+id/virus_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30.0dip"
+        android:layout_marginTop="20.0dip"
+        android:text="virus found!"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#ffffffff" />
+
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/opt_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="100" >
+
+            <Spinner
+                android:id="@+id/options"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="30"
+                android:textColor="#ffffffff" />
+
+            <Button
+                android:id="@+id/go"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="70"
+                android:text="Go"
+                android:textColor="#ffffffff" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/virus_founds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30.0dip"
+            android:text="Viruses:"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#ffffffff" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="2.0dip"
+            android:layout_marginTop="10.0dip"
+            android:background="#66ffffff" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/virus_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10.0dip"
+                android:text="Medium Text"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#ffffffff" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>
